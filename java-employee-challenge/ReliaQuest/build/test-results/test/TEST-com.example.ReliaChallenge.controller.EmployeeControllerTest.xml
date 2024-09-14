@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.ReliaChallenge.controller.EmployeeControllerTest" tests="15" skipped="0" failures="0" errors="0" timestamp="2024-09-14T08:00:43" hostname="GOURAV-PC" time="1.59">
+  <properties/>
+  <testcase name="contextLoads()" classname="com.example.ReliaChallenge.controller.EmployeeControllerTest" time="0.09"/>
+  <testcase name="testGetEmployeeByIdGetApiFailure()" classname="com.example.ReliaChallenge.controller.EmployeeControllerTest" time="0.297"/>
+  <testcase name="testGetAllEmployeeListSuccess()" classname="com.example.ReliaChallenge.controller.EmployeeControllerTest" time="0.313"/>
+  <testcase name="testCreateEmployeePostApiSuccess()" classname="com.example.ReliaChallenge.controller.EmployeeControllerTest" time="0.167"/>
+  <testcase name="testGetAllEmployeeListFailure()" classname="com.example.ReliaChallenge.controller.EmployeeControllerTest" time="0.017"/>
+  <testcase name="testGetEmployeesByNameSuccess()" classname="com.example.ReliaChallenge.controller.EmployeeControllerTest" time="0.046"/>
+  <testcase name="testGetHighestSalaryOfEmployeesSuccess()" classname="com.example.ReliaChallenge.controller.EmployeeControllerTest" time="0.049"/>
+  <testcase name="testCreateEmployeePostFailure()" classname="com.example.ReliaChallenge.controller.EmployeeControllerTest" time="0.022"/>
+  <testcase name="testdeleteEmployeeByIdDeleteSuccess()" classname="com.example.ReliaChallenge.controller.EmployeeControllerTest" time="0.113"/>
+  <testcase name="testGetTopTenHighestEarningEmployeeNamesSuccess()" classname="com.example.ReliaChallenge.controller.EmployeeControllerTest" time="0.052"/>
+  <testcase name="testGetEmployeesByNameFailure()" classname="com.example.ReliaChallenge.controller.EmployeeControllerTest" time="0.017"/>
+  <testcase name="testGetHighestSalaryOfEmployeesFailure()" classname="com.example.ReliaChallenge.controller.EmployeeControllerTest" time="0.023"/>
+  <testcase name="testGetEmployeeByIdGetApiSuccess()" classname="com.example.ReliaChallenge.controller.EmployeeControllerTest" time="0.044"/>
+  <testcase name="testdeleteEmployeeByIdDeleteFailure()" classname="com.example.ReliaChallenge.controller.EmployeeControllerTest" time="0.067"/>
+  <testcase name="testGetTopTenHighestEarningEmployeeNamesFailure()" classname="com.example.ReliaChallenge.controller.EmployeeControllerTest" time="0.019"/>
+  <system-out><![CDATA[13:30:33.468 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+13:30:33.496 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+13:30:33.585 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.example.ReliaChallenge.controller.EmployeeControllerTest] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+13:30:33.623 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.example.ReliaChallenge.controller.EmployeeControllerTest]: class path resource [com/example/ReliaChallenge/controller/EmployeeControllerTest-context.xml] does not exist
+13:30:33.625 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.example.ReliaChallenge.controller.EmployeeControllerTest]: class path resource [com/example/ReliaChallenge/controller/EmployeeControllerTestContext.groovy] does not exist
+13:30:33.625 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.example.ReliaChallenge.controller.EmployeeControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+13:30:33.627 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.ReliaChallenge.controller.EmployeeControllerTest]: EmployeeControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+13:30:33.770 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.example.ReliaChallenge.controller.EmployeeControllerTest]
+13:30:34.022 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [E:\ReliaQuest\java-employee-challenge\ReliaQuest\build\classes\java\main\com\example\ReliaChallenge\RqChallengeApplication.class]
+13:30:34.028 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.ReliaChallenge.RqChallengeApplication for test class com.example.ReliaChallenge.controller.EmployeeControllerTest
+13:30:34.335 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.example.ReliaChallenge.controller.EmployeeControllerTest]: using defaults.
+13:30:34.336 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+13:30:34.357 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [org/springframework/transaction/TransactionDefinition]
+13:30:34.358 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
+13:30:34.359 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@7668d560, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@46292372, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@126be319, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@6c44052e, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@5c371e13, org.springframework.test.context.support.DirtiesContextTestExecutionListener@530a8454, org.springframework.test.context.event.EventPublishingTestExecutionListener@1e34c607, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@5215cd9a, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@36b6964d, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@31198ceb, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@9257031, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@75201592, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@7726e185]
+13:30:34.366 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@44ea608c testClass = EmployeeControllerTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@50cf5a23 testClass = EmployeeControllerTest, locations = '{}', classes = '{class com.example.ReliaChallenge.RqChallengeApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@4bff1903, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@5357c287, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@2b43529a, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@5ad10c1a, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@71dba0e3, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@7829b776, org.springframework.boot.test.web.reactive.server.WebTestClientContextCustomizer@458342d3, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@3fce8fd9], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true]], class annotated with @DirtiesContext [false] with mode [null].
+13:30:34.518 [Test worker] DEBUG org.springframework.boot.ApplicationServletEnvironment - Activating profiles []
+13:30:34.520 [Test worker] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.6.1)
+
+2024-09-14 13:30:35.617  INFO 14800 --- [    Test worker] c.e.R.controller.EmployeeControllerTest  : Starting EmployeeControllerTest using Java 11.0.13 on Gourav-PC with PID 14800 (started by gourav in E:\ReliaQuest\java-employee-challenge\ReliaQuest)
+2024-09-14 13:30:35.620  INFO 14800 --- [    Test worker] c.e.R.controller.EmployeeControllerTest  : No active profile set, falling back to default profiles: default
+2024-09-14 13:30:42.519  INFO 14800 --- [    Test worker] c.e.R.controller.EmployeeControllerTest  : Started EmployeeControllerTest in 7.995 seconds (JVM running for 13.327)
+2024-09-14 13:30:43.248  INFO 14800 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-09-14 13:30:43.249  INFO 14800 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-09-14 13:30:43.254  INFO 14800 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 3 ms
+2024-09-14 13:30:43.309  INFO 14800 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-09-14 13:30:43.309  INFO 14800 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-09-14 13:30:43.313  INFO 14800 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 3 ms
+2024-09-14 13:30:43.517  INFO 14800 --- [    Test worker] c.e.R.controller.EmployeeController      : EmployeeController|getEmployeeById|Entry
+2024-09-14 13:30:43.562 ERROR 14800 --- [    Test worker] c.e.R.controller.EmployeeController      : EmployeeController|getEmployeeById|Error:null
+2024-09-14 13:30:43.617  INFO 14800 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-09-14 13:30:43.618  INFO 14800 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-09-14 13:30:43.621  INFO 14800 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 3 ms
+2024-09-14 13:30:43.673  INFO 14800 --- [    Test worker] c.e.R.controller.EmployeeController      : EmployeeController|getAllEmployees|Entry
+2024-09-14 13:30:43.685  INFO 14800 --- [    Test worker] c.e.R.controller.EmployeeController      : EmployeeController|getAllEmployees|Exit
+2024-09-14 13:30:43.934  INFO 14800 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-09-14 13:30:43.934  INFO 14800 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-09-14 13:30:43.936  INFO 14800 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2024-09-14 13:30:44.060  INFO 14800 --- [    Test worker] c.e.R.controller.EmployeeController      : EmployeeController|createEmployee|Entry
+2024-09-14 13:30:44.075  INFO 14800 --- [    Test worker] c.e.R.controller.EmployeeController      : EmployeeController|createEmployee|Employee Created Successfully|Exit
+2024-09-14 13:30:44.111  INFO 14800 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-09-14 13:30:44.112  INFO 14800 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-09-14 13:30:44.115  INFO 14800 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 3 ms
+2024-09-14 13:30:44.118  INFO 14800 --- [    Test worker] c.e.R.controller.EmployeeController      : EmployeeController|getAllEmployees|Entry
+2024-09-14 13:30:44.120 ERROR 14800 --- [    Test worker] c.e.R.controller.EmployeeController      : EmployeeController|getAllEmployees|Error:null
+2024-09-14 13:30:44.136  INFO 14800 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-09-14 13:30:44.137  INFO 14800 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-09-14 13:30:44.148  INFO 14800 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 10 ms
+2024-09-14 13:30:44.164  INFO 14800 --- [    Test worker] c.e.R.controller.EmployeeController      : EmployeeController|getEmployeesByNameSearch|Entry
+2024-09-14 13:30:44.168  INFO 14800 --- [    Test worker] c.e.R.controller.EmployeeController      : EmployeeController|getEmployeesByNameSearch|Exit
+2024-09-14 13:30:44.199  INFO 14800 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-09-14 13:30:44.201  INFO 14800 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-09-14 13:30:44.204  INFO 14800 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 3 ms
+2024-09-14 13:30:44.210  INFO 14800 --- [    Test worker] c.e.R.controller.EmployeeController      : EmployeeController|getHighestSalaryOfEmployees|Entry
+2024-09-14 13:30:44.222  INFO 14800 --- [    Test worker] c.e.R.controller.EmployeeController      : EmployeeController|getHighestSalaryOfEmployees|Exit
+2024-09-14 13:30:44.267  INFO 14800 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-09-14 13:30:44.268  INFO 14800 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-09-14 13:30:44.272  INFO 14800 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 4 ms
+2024-09-14 13:30:44.276  INFO 14800 --- [    Test worker] c.e.R.controller.EmployeeController      : EmployeeController|createEmployee|Entry
+2024-09-14 13:30:44.278 ERROR 14800 --- [    Test worker] c.e.R.controller.EmployeeController      : EmployeeController|createEmployee|Error:null
+2024-09-14 13:30:44.305  INFO 14800 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-09-14 13:30:44.324  INFO 14800 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-09-14 13:30:44.333  INFO 14800 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 8 ms
+2024-09-14 13:30:44.360  INFO 14800 --- [    Test worker] c.e.R.controller.EmployeeController      : EmployeeController|deleteEmployeeById|Entry
+2024-09-14 13:30:44.371  INFO 14800 --- [    Test worker] c.e.R.controller.EmployeeController      : EmployeeController|deleteEmployeeById|Employee Deleted Successfully|Exit
+2024-09-14 13:30:44.429  INFO 14800 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-09-14 13:30:44.430  INFO 14800 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-09-14 13:30:44.432  INFO 14800 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2024-09-14 13:30:44.438  INFO 14800 --- [    Test worker] c.e.R.controller.EmployeeController      : EmployeeController|getTopTenHighestEarningEmployeeNames|Entry
+2024-09-14 13:30:44.456  INFO 14800 --- [    Test worker] c.e.R.controller.EmployeeController      : EmployeeController|getTopTenHighestEarningEmployeeNames|Exit
+2024-09-14 13:30:44.538  INFO 14800 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-09-14 13:30:44.539  INFO 14800 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-09-14 13:30:44.541  INFO 14800 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2024-09-14 13:30:44.545  INFO 14800 --- [    Test worker] c.e.R.controller.EmployeeController      : EmployeeController|getEmployeesByNameSearch|Entry
+2024-09-14 13:30:44.546 ERROR 14800 --- [    Test worker] c.e.R.controller.EmployeeController      : EmployeeController|getEmployeesByNameSearch|Error:null
+2024-09-14 13:30:44.577  INFO 14800 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-09-14 13:30:44.577  INFO 14800 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-09-14 13:30:44.579  INFO 14800 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2024-09-14 13:30:44.588  INFO 14800 --- [    Test worker] c.e.R.controller.EmployeeController      : EmployeeController|getHighestSalaryOfEmployees|Entry
+2024-09-14 13:30:44.589 ERROR 14800 --- [    Test worker] c.e.R.controller.EmployeeController      : EmployeeController|getHighestSalaryOfEmployees|Error:null
+2024-09-14 13:30:44.643  INFO 14800 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-09-14 13:30:44.644  INFO 14800 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-09-14 13:30:44.657  INFO 14800 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 13 ms
+2024-09-14 13:30:44.668  INFO 14800 --- [    Test worker] c.e.R.controller.EmployeeController      : EmployeeController|getEmployeeById|Entry
+2024-09-14 13:30:44.669  INFO 14800 --- [    Test worker] c.e.R.controller.EmployeeController      : EmployeeController|getEmployeeById|Exit
+2024-09-14 13:30:44.707  INFO 14800 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-09-14 13:30:44.710  INFO 14800 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-09-14 13:30:44.730  INFO 14800 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 16 ms
+2024-09-14 13:30:44.738  INFO 14800 --- [    Test worker] c.e.R.controller.EmployeeController      : EmployeeController|deleteEmployeeById|Entry
+2024-09-14 13:30:44.762 ERROR 14800 --- [    Test worker] c.e.R.controller.EmployeeController      : EmployeeController|createEmployee|Error:null
+2024-09-14 13:30:44.780  INFO 14800 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-09-14 13:30:44.781  INFO 14800 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-09-14 13:30:44.784  INFO 14800 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 3 ms
+2024-09-14 13:30:44.786  INFO 14800 --- [    Test worker] c.e.R.controller.EmployeeController      : EmployeeController|getTopTenHighestEarningEmployeeNames|Entry
+2024-09-14 13:30:44.787 ERROR 14800 --- [    Test worker] c.e.R.controller.EmployeeController      : EmployeeController|getTopTenHighestEarningEmployeeNames|Error:null
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
