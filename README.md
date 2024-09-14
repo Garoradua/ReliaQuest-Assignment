@@ -1,36 +1,36 @@
 Endpoints to implement
-getAllEmployees()
 
+getAllEmployees()
 output - list of employees
 description - this should return all employees
-getEmployeesByNameSearch()
 
+getEmployeesByNameSearch()
 output - list of employees
 description - this should return all employees whose name contains or matches the string input provided
-getEmployeeById(string id)
 
+getEmployeeById(string id)
 output - employee
 description - this should return a single employee
-getHighestSalaryOfEmployees()
 
+getHighestSalaryOfEmployees()
 output - integer of the highest salary
 description -  this should return a single integer indicating the highest salary of all employees
-getTop10HighestEarningEmployeeNames()
 
+getTop10HighestEarningEmployeeNames()
 output - list of employees
 description -  this should return a list of the top 10 employees based off of their salaries
-createEmployee(string name, string salary, string age)
 
+createEmployee(string name, string salary, string age)
 output - string of the status (i.e. success)
 description -  this should return a status of success or failed based on if an employee was created
-deleteEmployee(String id)
 
+deleteEmployee(String id)
 output - the name of the employee that was deleted
 description - this should delete the employee with specified id given
 External endpoints from base url
 This section will outline all available endpoints and their request and response models from https://dummy.restapiexample.com
-/employees
 
+/employees
 request:
     method: GET
     parameters: n/a
@@ -49,8 +49,8 @@ response:
             ....
         ]
     }
-/employee/{id}
 
+/employee/{id}
 request:
     method: GET
     parameters: 
@@ -67,8 +67,8 @@ response:
             "profile_image": ""
         }
     }
-/create
 
+/create
 request:
     method: POST
     parameters: 
@@ -86,8 +86,8 @@ response:
             "id": 25
         }
     }
-/delete/{id}
 
+/delete/{id}
 request:
     method: DELETE
     parameters:
